@@ -1,0 +1,306 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+@font-face {
+	font-family: "Juana Alt Light";
+	src: url("police/juana-alt-light.ttf") format("truetype");
+    font-style:normal;
+    font-weight:normal;
+}
+
+body{
+    background-color: rgb(255, 255, 255); 
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    font-family: "Juana Alt Light";
+    font-size: 0.85rem;
+}
+
+p, h1, h2, h3{
+    font-family: "Juana Alt Light";
+    font-weight: 100;
+}
+
+/*----------------------------liens style----------------------------*/
+
+.sans-deco {
+    color: white;
+  }
+
+a{
+    text-decoration: none;
+  }
+
+.underline::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #45494E;
+    transition-duration: 1s;
+  }
+
+.underline:hover::after{
+    width: 100%;
+}
+
+.underline2::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition-duration: 1s;
+  }
+
+.underline2:hover::after{
+    width: 100%;
+}
+  
+/*----------------------------header----------------------------*/
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    color: #45494E;
+    font-size: 15px;
+    position: fixed;
+    z-index: 100000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+
+  }
+
+.bonnetlogo{
+    margin: 0 auto;
+    height: fit-content;
+    width: fit-content;
+  }
+
+header img{
+    height: 50px;
+    width: 50px;
+  }
+
+header a:first-child{
+    position: absolute;
+    background: #fff;
+    color: #45494E;;
+    font-size: 0.80em;
+    margin-left: 3%;
+  }
+
+/*----------------------------partie1----------------------------*/
+
+.partie1 {
+    height: 100vh;
+    background-position: center;
+    background-image: url("image/home-background-image.jpg");
+    background-size: cover;
+}
+
+.titlept1{
+    color: #ffffff;
+    font-size: 45px;
+    position: relative;
+    text-align: center;
+    top: 11%;
+    
+}
+
+.textept1{
+    color: #ffffff;
+    font-size: 80px;
+    position: relative;
+    top: 58%;
+    left: 65px;
+    width: fit-content;
+    line-height: 1;
+
+}
+
+.textelinkpt1{
+    color: #ffffff;
+    font-size: 19px;
+    position: relative;
+    top: 58%;
+    left: 65px;
+    width: fit-content;
+    font-family: "GeneralSans-Regular", sans-serif;
+    margin-top: 1.5%;
+}
+
+/*----------------------------partie2----------------------------*/
+
+.partie2 {
+    padding-top: 125px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.partie2 :first-child{
+    width: 40%;
+    height: auto;
+}
+
+.partie2 :first-child img{
+    width: 87%;
+    height: 87%;
+}
+
+
+.partie2 :last-child{
+    width: 50%;
+    height: 55%;
+    text-align: left;
+}
+
+.partie2 :last-child h2,.partie2 :last-child p{
+    width: 100%;
+    height: fit-content;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: fit-content;
+}
+
+.partie2 :last-child h2{
+    width: 100%;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 10%;
+    font-size: 62px;
+    margin-bottom: 5%;
+}
+
+.partie2 :last-child p{
+    width: 100%;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 10%;
+    margin-right: 30%;
+    font-size: 19.8px;
+    font-family: "GeneralSans-Regular", sans-serif;
+    color: #484b4e;
+    line-height: 1.75;
+}
+
+.textelinkpt2{
+    font-size: 19px;
+    position: relative;
+    width: fit-content;
+    font-family: "GeneralSans-Regular", sans-serif;
+    margin-top: 8%;
+}
+
+/*----------------------------partie3----------------------------*/
+
+.partie3 {
+    padding-top: 125px;
+    padding-bottom: 125px;
+    background-color: #f8f6f2;
+}
+
+.partie3 h3{
+    background-color: #f8f6f2;
+    text-align: center;
+    width: 25%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    font-size: 19px;
+}
+
+.partie3 p{
+    background-color: #f8f6f2;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 31px;
+    line-height: 1.5;
+}
+
+span.parenthese {
+    color: rgb(100, 100, 100);
+    text-decoration: 1px underline rgb(100, 100, 100);
+}
+
+/*----------------------------partie4----------------------------*/
+
+.partie4{
+    background-color:#f8f6f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.partie4 > div{
+    width: 25%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow:hidden;
+}
+
+.partie4 img{
+    width: 100%;
+    height: 100%;
+}
+
+.partie4 div div{
+    position: absolute;
+    z-index: 2;
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px;
+}
+
+.partie4 img {
+    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+    -webkit-transition: 0.4s ; /* Safari et Chrome */
+    -moz-transition: 0.4s ; /* Firefox */
+    -ms-transition: 0.4s ; /* Internet Explorer 9 */
+    -o-transition: 0.4s ; /* Opera */
+    transition: 0.4s ;
+    }
+
+    .partie4 img:hover {
+    /* L'image est grossie de 25% */
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25) ;
+    }
+
+/*----------------------------media----------------------------*/
+
+@media screen and (max-width :1000px) {
+    .partie2{
+        flex-direction: column;
+    }
+    .partie2 :first-child{
+        width: 60%;
+    }
+    .partie4{
+        flex-direction: column;
+        align-items: center;
+    }
+    .partie4 > div{
+        margin: 10px 0;
+        width: 50%;
+    }
+}
+
